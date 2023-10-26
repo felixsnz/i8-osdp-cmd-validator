@@ -1,0 +1,80 @@
+memory type: 00
+Req: 7E 000D 6034 A1 0000000000020100 0145 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 01
+Req: 7E 000D 6034 A1 0100000000020100 0146 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 02
+Req: 7E 000D 6034 A1 0200000000020100 0147 7F
+Resp: 7E000500040900127F
+Status: BAD
+---------------------
+memory type: 03
+Req: 7E 000D 6034 A1 0300000000020100 0148 7F
+Resp: 7E000500040900127F
+Status: BAD
+---------------------
+memory type: 80
+Req: 7E 000D 6034 A1 8000000000020100 01C5 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 81
+Req: 7E 000D 6034 A1 8100000000020100 01C6 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 82
+Req: 7E 000D 6034 A1 8200000000020100 01C7 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 83
+Req: 7E 000D 6034 A1 8300000000020100 01C8 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 84
+Req: 7E 000D 6034 A1 8400000000020100 01C9 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 85
+Req: 7E 000D 6034 A1 8500000000020100 01CA 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 86
+Req: 7E 000D 6034 A1 8600000000020100 01CB 7F
+Resp: 7E000500040900127F
+Status: BAD
+---------------------
+memory type: 87
+Req: 7E 000D 6034 A1 8700000000020100 01CC 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 88
+Req: 7E 000D 6034 A1 8800000000020100 01CD 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 89
+Req: 7E 000D 6034 A1 8900000000020100 01CE 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 8B
+Req: 7E 000D 6034 A1 8B00000000020100 01D0 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------
+memory type: 8C
+Req: 7E 000D 6034 A1 8C00000000020100 01D1 7F
+Resp: 7E000500030B00167F
+Status: BAD
+---------------------

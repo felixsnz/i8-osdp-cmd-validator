@@ -1,0 +1,50 @@
+port number: 00 - MCU Port P0:
+Req: 7E 000A 602C 96 0011110102 0151 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 01 - MCU Port P1:
+Req: 7E 000A 602C 96 0111110102 0152 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 02 - MCU Port P2:
+Req: 7E 000A 602C 96 0211110102 0153 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 03 - MCU Port P3:
+Req: 7E 000A 602C 96 0311110102 0154 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 04 - MCU Port P4:
+Req: 7E 000A 602C 96 0411110102 0155 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 05 - MCU Port P5:
+Req: 7E 000A 602C 96 0511110102 0156 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 06 - MCU Port P6:
+Req: 7E 000A 602C 96 0611110102 0157 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 07 - MCU Port P7:
+Req: 7E 000A 602C 96 0711110102 0158 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 08 - MCU Port P8:
+Req: 7E 000A 602C 96 0811110102 0159 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 20 - Port Expansion U8:
+Req: 7E 000A 602C 96 2011110102 0171 7F
+Resp: 7E000500050A00147F
+Status: NACK
+---------------------

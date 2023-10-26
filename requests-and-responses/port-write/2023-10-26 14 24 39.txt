@@ -1,0 +1,20 @@
+port number: 08 - MCU Port P8:
+Req: 7E 000A 602C 96 0811110102 0159 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 20 - Port Expansion U8:
+Req: 7E 000A 602C 96 2011110102 0171 7F
+Resp: 7E000500050A00147F
+Status: NACK
+---------------------
+port number: 21 - Port Expansion U9 LED Driver OUT1-15:
+Req: 7E 000A 602C 96 2111110102 0172 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 22 - Port Expansion U9 LED Driver OUT16-28:
+Req: 7E 000A 602C 96 2211110102 0173 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------

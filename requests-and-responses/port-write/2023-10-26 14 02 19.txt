@@ -1,0 +1,10 @@
+port number: 00 - MCU Port P0:
+Req: 7E 000A 602C 96 00FFFF0102 032D 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------
+port number: 01 - MCU Port P1:
+Req: 7E 000A 602C 96 01FFFF0102 032E 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------

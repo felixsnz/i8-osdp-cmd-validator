@@ -1,0 +1,192 @@
+Port number: 0
+port pin: 0
+Req: 7E000860309800000501357F
+Resp: 7e000b60319c00000fb10027021f7f
+Status: OK
+---------------------
+Port number: 0
+port pin: 1
+Req: 7E000860309800010501367F
+Resp: 7e000b60319c00010f9e001c02027f
+Status: OK
+---------------------
+Port number: 0
+port pin: 2
+Req: 7E000860309800020501377F
+Resp: 7e000b60319c00020fb20024021f7f
+Status: OK
+---------------------
+Port number: 0
+port pin: 3
+Req: 7E000860309800030501387F
+Resp: 7e000b60319c00030fa40021020f7f
+Status: OK
+---------------------
+Port number: 0
+port pin: 4
+Req: 7E000860309800040501397F
+Resp: 7e000b60319c00040fa6001b020c7f
+Status: OK
+---------------------
+Port number: 0
+port pin: 5
+Req: 7E0008603098000505013A7F
+Resp: 7e000b60319c00050fa1001e020b7f
+Status: OK
+---------------------
+Port number: 0
+port pin: 6
+Req: 7E0008603098000605013B7F
+Resp: 7e000b60319c00060fb70026022a7f
+Status: OK
+---------------------
+Port number: 0
+port pin: 7
+Req: 7E0008603098000705013C7F
+Resp: 7e000b60319c00070fa10020020f7f
+Status: OK
+---------------------
+Port number: 0
+port pin: 8
+Req: 7E0008603098000805013D7F
+Resp: 7e000500030b00167f
+Status: BAD
+---------------------
+Port number: 0
+port pin: 9
+Req: 7E0008603098000905013E7F
+Resp: 7e000500030b00167f
+Status: BAD
+---------------------
+Port number: 0
+port pin: 10
+Req: 7E0008603098000A05013F7F
+Resp: 7e000500030b00167f
+Status: BAD
+---------------------
+Port number: 0
+port pin: 11
+Req: 7E0008603098000B0501407F
+Resp: 7e000500030b00167f
+Status: BAD
+---------------------
+Port number: 0
+port pin: 12
+Req: 7E0008603098000C0501417F
+Resp: 7e000500030b00167f
+Status: BAD
+---------------------
+Port number: 0
+port pin: 13
+Req: 7E0008603098000D0501427F
+Resp: 7e000500030b00167f
+Status: BAD
+---------------------
+Port number: 0
+port pin: 14
+Req: 7E0008603098000E0501437F
+Resp: 7e000500030b00167f
+Status: BAD
+---------------------
+Port number: 0
+port pin: 15
+Req: 7E0008603098000F0501447F
+Resp: 7e000500030b00167f
+Status: BAD
+---------------------
+Port number: 5
+port pin: 0
+Req: 7E0008603098050005013A7F
+Resp: 7e000b60319c050000000000013d7f
+Status: OK
+---------------------
+Port number: 5
+port pin: 1
+Req: 7E0008603098050105013B7F
+Resp: 7e000b60319c050100000000013e7f
+Status: OK
+---------------------
+Port number: 5
+port pin: 2
+Req: 7E0008603098050205013C7F
+Resp: 7e000b60319c050200000000013f7f
+Status: OK
+---------------------
+Port number: 5
+port pin: 3
+Req: 7E0008603098050305013D7F
+Resp: 7e000b60319c05030000000001407f
+Status: OK
+---------------------
+Port number: 5
+port pin: 4
+Req: 7E0008603098050405013E7F
+Resp: 7e000b60319c05040000000001417f
+Status: OK
+---------------------
+Port number: 5
+port pin: 5
+Req: 7E0008603098050505013F7F
+Resp: 7e000b60319c05050000000001427f
+Status: OK
+---------------------
+Port number: 5
+port pin: 6
+Req: 7E000860309805060501407F
+Resp: 7e000b60319c05060000000001437f
+Status: OK
+---------------------
+Port number: 5
+port pin: 7
+Req: 7E000860309805070501417F
+Resp: 7e000b60319c05070000000001447f
+Status: OK
+---------------------
+Port number: 5
+port pin: 8
+Req: 7E000860309805080501427F
+Resp: 7e000b60319c05080000000001457f
+Status: OK
+---------------------
+Port number: 5
+port pin: 9
+Req: 7E000860309805090501437F
+Resp: 7e000b60319c05090000000001467f
+Status: OK
+---------------------
+Port number: 5
+port pin: 10
+Req: 7E0008603098050A0501447F
+Resp: 7e000b60319c050a0000000001477f
+Status: OK
+---------------------
+Port number: 5
+port pin: 11
+Req: 7E0008603098050B0501457F
+Resp: 7e000b60319c050b0000000001487f
+Status: OK
+---------------------
+Port number: 5
+port pin: 12
+Req: 7E0008603098050C0501467F
+Resp: 7e000b60319c050c0000000001497f
+Status: OK
+---------------------
+Port number: 5
+port pin: 13
+Req: 7E0008603098050D0501477F
+Resp: 7e000b60319c050d00000000014a7f
+Status: OK
+---------------------
+Port number: 5
+port pin: 14
+Req: 7E0008603098050E0501487F
+Resp: 7e000b60319c050e00000000014b7f
+Status: OK
+---------------------
+Port number: 5
+port pin: 15
+Req: 7E0008603098050F0501497F
+Resp: 7e000b60319c050f00000000014c7f
+Status: OK
+---------------------

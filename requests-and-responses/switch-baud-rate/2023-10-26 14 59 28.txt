@@ -1,0 +1,5 @@
+Baud rate selection: 04 -  76800
+Req: 7E 0006 602A 90 04 0124 7F
+Resp: 7E000500040900127F
+Status: ACK
+---------------------

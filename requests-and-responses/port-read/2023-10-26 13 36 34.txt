@@ -1,0 +1,55 @@
+port number: 00 - MCU Port P0:
+Req: 7E 0006 602E 94 00 0128 7F
+Resp: 7E0008602F9700000F013D7F
+Status: ACK
+---------------------
+port number: 01 - MCU Port P1:
+Req: 7E 0006 602E 94 01 0129 7F
+Resp: 7E0008602F97010000012F7F
+Status: ACK
+---------------------
+port number: 02 - MCU Port P2:
+Req: 7E 0006 602E 94 02 012A 7F
+Resp: 7E0008602F97024FDC025B7F
+Status: ACK
+---------------------
+port number: 03 - MCU Port P3:
+Req: 7E 0006 602E 94 03 012B 7F
+Resp: 7E0008602F9703000C013D7F
+Status: ACK
+---------------------
+port number: 04 - MCU Port P4:
+Req: 7E 0006 602E 94 04 012C 7F
+Resp: 7E0008602F9704401401867F
+Status: ACK
+---------------------
+port number: 05 - MCU Port P5:
+Req: 7E 0006 602E 94 05 012D 7F
+Resp: 7E0008602F9705004001737F
+Status: ACK
+---------------------
+port number: 06 - MCU Port P6:
+Req: 7E 0006 602E 94 06 012E 7F
+Resp: 7E0008602F9706000001347F
+Status: ACK
+---------------------
+port number: 07 - MCU Port P7:
+Req: 7E 0006 602E 94 07 012F 7F
+Resp: 7E0008602F9707000401397F
+Status: ACK
+---------------------
+port number: 08 - MCU Port P8:
+Req: 7E 0006 602E 94 08 0130 7F
+Resp: 7E0008602F9708000001367F
+Status: ACK
+---------------------
+port number: 10 - RESERVED1:
+Req: 7E 0006 602E 94 10 0138 7F
+Resp: 7E000500030B00167F
+Status: NA
+---------------------
+port number: 0A - RESERVED2:
+Req: 7E 0006 602E 94 0A 0132 7F
+Resp: 7E000500030B00167F
+Status: NA
+---------------------
