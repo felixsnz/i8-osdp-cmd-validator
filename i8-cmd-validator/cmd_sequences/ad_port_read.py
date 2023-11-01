@@ -3,14 +3,13 @@ from utils.singleton import Singleton
 from device.handler import DeviceHandler
 from report_generator.report import Report
 from utils.constants import FRAME_END, FRAME_START
-import sys
-from serial import Serial
-from datetime import datetime
+
 
 
 length = "0008"
 hex_command = "6030"
 command_name = "A/D Port Read Request"
+ack_resp = "6031"
 
 sg = Singleton()
 
@@ -18,8 +17,8 @@ def seq(device:DeviceHandler, report: Report):
     
 
     
-    for port_number in [0,5]:  # Byte 1: 0x00 to 0x05
-        for port_pin in range(16):  # Byte 2: 0x00 to 0x0F
+    for port_number in [0, 5]:  # Byte 1: 0x00 to 0x05
+        for port_pin in range(4):  # Byte 2: 0x00 to 0x0F
 
             data = f"{port_number:02X}{port_pin:02X}{5:02X}"
             checksum1 = compute_checksum_1(length, hex_command)
@@ -44,13 +43,13 @@ def seq(device:DeviceHandler, report: Report):
                     FRAME_START,
                     length,
                     hex_command,
-                    checksum1,
+                    f'{checksum1:02X}',
                     data,
-                    checksum2,
+                    f'{checksum2:04X}',
                     FRAME_END,
                     cmd,
                     resp,
-                    get_resp_status(resp)
+                    get_resp_status(resp, ack_resp)
                 ]
             )
 

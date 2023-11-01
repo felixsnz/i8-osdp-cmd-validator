@@ -1,53 +1,63 @@
-from utils.checksum_tools import compute_checksum_1, compute_checksum_2
-
+from utils.checksum_tools import compute_checksum_1, compute_checksum_2, validate_length, get_resp_status
+from utils.constants import FRAME_START, FRAME_END
 import serial
-from datetime import datetime
-import time, sys
+from device.handler import DeviceHandler
+from report_generator.report import Report
 
-# Initialize Serial Communication
-ser = serial.Serial('COM9', 115200, timeout=1)
 
-frame_start = "7E"
 length = "0006"
-command = "603C"
+hex_command = "603C"
+command_name = "Firmware Identification Request"
 
-checksum1 = compute_checksum_1(length, command)
+ack_resp = "603D"
 
-frame_end = "7F"
+lower_nibble_options = {
+       "0": "Include Checksum",
+       "1": "Doesn't Inlcude Checksum"
+}
 
-
-with open(f"requests-and-responses/fw-id/{str(datetime.now().strftime('%Y-%m-%d %H %M %S'))}.txt", mode='w') as file:
-    for memory_type in [0x0]: 
-
-            data_dict = {
- 
-            }
-
-            data = hex(memory_type)[2:].zfill(2).upper()
-            data += ''.join([hex(value)[2:].zfill(2).upper() for key, value in data_dict.items()])
-
-            checksum2 = compute_checksum_2(length, command, checksum1, data)
-            cmd = f'{frame_start} {length} {command} {checksum1:02X} {data} {checksum2:04X} {frame_end}'
-
-            byte_command = bytes.fromhex(cmd)
-            ser.write(byte_command)
-            time.sleep(0.5)
-
-            # Read Hexadecimal Response
-            received_data = ser.read(45)
-            time.sleep(0.5)
-            resp = received_data.hex().upper()
-            status = "OK"
-            if not "603D" in resp:
-                print(f"error with cmd: {cmd}")
-                status = "BAD"
-
-            
-            file.write(f"memory type: {memory_type:02X}\n")
-            file.write(f"Req: {cmd.upper()}\n")
-            file.write(f"Resp: {resp.upper()}\n")
-            file.write(f"Status: {status}\n")
-            file.write("---------------------\n")
+upper_nibble_options = {
+       "0":"Primary MCU"
+       #only primary MCU option available
+}
 
 
-ser.close()
+def seq(device:DeviceHandler, report: Report):
+
+        for lower_nibble, lower_option in lower_nibble_options.items():
+            for upper_nibble, upper_option in upper_nibble_options.items():
+
+                data = f'{upper_nibble}{lower_nibble}'
+                checksum1 = compute_checksum_1(length, hex_command)
+                checksum2 = compute_checksum_2(length, hex_command, checksum1, data)
+                cmd = f'{FRAME_START}{length}{hex_command}{checksum1:02X}{data}{checksum2:04X}{FRAME_END}'
+
+                valid_length, computed_length = validate_length(length, hex_command, checksum1, data, checksum2)
+
+                if not valid_length:
+                        print(f"input length: {length}, was different to computed length: {hex(computed_length)}")
+
+
+                device.send_cmd(cmd)
+
+                resp = device.read_response()
+
+                report.append(
+                    [
+                        device.name,
+                        f'[{hex_command}] {command_name}',
+                        f'{lower_option} in {upper_option}',
+                        FRAME_START,
+                        length,
+                        hex_command,
+                        f'{checksum1:02X}',
+                        data,
+                        f'{checksum2:04X}',
+                        FRAME_END,
+                        cmd,
+                        resp,
+                        get_resp_status(resp, ack_resp)
+                    ]
+                )
+
+
