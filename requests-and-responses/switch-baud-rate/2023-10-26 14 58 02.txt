@@ -1,5 +1,0 @@
-Baud rate selection: 03 -  19200
-Req: 7E 0006 602A 90 03 0123 7F
-Resp: 7E000500040900127F
-Status: ACK
----------------------

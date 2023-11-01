@@ -1,5 +1,0 @@
-port number: 01
-Req: 7E 000A 6151 BC 01050101 0180 7F
-Resp: 
-Status: BAD
----------------------

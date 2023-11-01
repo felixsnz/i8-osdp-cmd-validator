@@ -1,5 +1,0 @@
-Baud rate selection: 05 - 115200
-Req: 7E 0006 602A 90 05 0125 7F
-Resp: 7E000500040900127F
-Status: ACK
----------------------
