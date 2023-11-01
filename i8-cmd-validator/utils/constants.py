@@ -1,0 +1,2 @@
+FRAME_START = '7E'
+FRAME_END = '7F'
